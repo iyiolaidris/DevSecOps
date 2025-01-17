@@ -2,7 +2,7 @@
 set -e
 
 APP_NAME=mywebapp_secure
-VERSION=1.0
+VERSION=2.0
 
 #BUILD: Clenaup old container/build image
 docker rm -f $APP_NAME 2>/dev/null || true
