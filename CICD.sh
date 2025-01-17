@@ -15,4 +15,4 @@ docker scout sbom --output $APP_NAME.sbom $APP_NAME:$VERSION
 
 
 #TEST: Run the container
-docker run -d -p 80:80 --name $APP_NAME:$VERSION webapp-nginx:latest
+docker run -d -p 80:80 --name $APP_NAME webapp-nginx:latest
