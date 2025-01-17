@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-APP_NAME=mywebapp-secure
+APP_NAME=mywebapp_secure
 VERSION=1.0
 
 #BUILD: Clenaup old container/build image
@@ -15,4 +15,4 @@ docker scout sbom --output $APP_NAME.sbom $APP_NAME:$VERSION
 
 
 #TEST: Run the container
-docker run -d -p 80:80 --name $APP_NAME webapp-nginx:latest
+docker run -d -p 80:80 --name $APP_NAME webapp_nginx:latest
