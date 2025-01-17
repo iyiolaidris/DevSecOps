@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-APP_NAME=mywebapp-insecure
+APP_NAME=mywebapp_insecure
 VERSION=1.0
 
 #BUILD: Clenaup old container/build image
