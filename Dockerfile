@@ -8,7 +8,7 @@ COPY ./webapp-secure /usr/share/nginx/html
 EXPOSE 80
 
 # Configure a health check to ensure the container is healthy
-#HEALTHCHECK --interval=30s --timeout=10s --retries=3 CMD curl -f http://localhost/ || exit 1
+HEALTHCHECK --interval=30s --timeout=10s --retries=3 CMD curl -f http://localhost/ || exit 1
 
 # Start the NGINX server
 CMD ["nginx", "-g", "daemon off;"]
